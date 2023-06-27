@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pagina web </title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+<header>
+    <!-- Barra de navegacion -->
+    <div class="container-nav">
+        <nav class="navbar" role="navigation">
+            <a href="./index.html" class="brand">Mi pagina web</a>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="button-menu-toggle">Menu</button>
+    </div>
+</header>
+
+<main>
+    <!-- Tirulos y parrafos -->
+    <div class="container">
+            <h1 class="titulo">Bienvenidos a mí primer pagina web</h1>
+        <selectio>
+            <h2 class="titulo0" >Presentación</h2>
+            <p class="titulo1">Soy Leandro, ¡y esta es mi primera pagina web!</p>
+            <p class="titulo3">Estoy aprendiendo a desarrollar web para crear sitios web visualmente atrapantes y funcionales.</p>
+        </selectio>
+        <section>
+            <h2 class="titulo0" >Esto es lo q se viene...</h2>
+            <p class="titulo2">A lo largo de este curso, estaré aprendiendo HTML, CSS y JavaScript. Estos lenguajes me ayudaran a crear una base sólida en el desarrollo web front-end.</p>
+        </section> 
+
+        <div id="mi-id">Contenido de mi elemento</div>
+
+        <div class="ejemplo">Modelo de cajas (Box Model)</div>
+    </div>
+
+    <div class="video-container">
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qWcwFMAqpME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+        <video src="" controls></video>
+       
+    <!--mi parte TERMINADA-->
+    <div id="cambio">
+        <img id="image" src="https://static.vecteezy.com/system/resources/previews/000/574/512/original/vector-sign-of-user-icon.jpg" width="200" />
+    </div>
+        <input id="inImg" type="file"/>
+    <script>
+        var file = document.getElementById("inImg")
+        var img = document.getElementById("image")
+        file.addEventListener("change", (e) => {
+            var reader = new FileReader();
+            reader.onload = function(event){
+                img.src = event.target.result;
+            }
+            reader.readAsDataURL(e.target.files[0])
+        })
+    </script>
+    
+    </div>   
+    
+        <br />
+        <br />
+
+    <!-- Insertar una imagen -->
+        <img src="https://www.programaenlinea.net/wp-content/uploads/2019/07/programacion-3.jpg" alt="Una imagen de ejemplo" width="300" />
+        <br />
+        <br />
+
+    <!-- Insertar una imagen y ponerle un hipervinculo -->
+        <a href="https://www.google.com/" target="_blank"><img src="https://www.programaenlinea.net/wp-content/uploads/2019/07/programacion-3.jpg" alt="Una imagen de ejemplo" width="300" /></a>
+        <br />
+        <br />
+        <input type="file">
+         <br />
+        <input type="radio">
+        <br />
+         <input type="time">
+        <br />
+
+    <!-- Crear una barra que puedo mover -->
+        <h><em>Nivel de facha</em><input type="range" name="passwd" id="passwd"></p>
+        <br />
+        <br />
+
+    <!-- Escribir un texto con input -->
+        <input type="text" name="ejemplo" />
+
+        <button onclick="showAlert()">¡Haz clic en mí!</button>
+</main>
+
+<footer>
+    <!-- lista(sin numerar) -->
+        <ul>
+            <li>Edad = 23</li>
+            <li>Nacionalidad = Argentino papá!!</li>
+        </ul>
+        <br />
+</footer>
+
+
+<script src="script.js"></script>
+
+
+<!-- Funciona igual -->
+<!-- <script>
+function showAlert() { 
+    alert('¡Hola, esta es una alerta desde JavaScript!'); 
+}
+</script>  -->
+
+</body>
+
+<script> 
+    document.querySelector("button.button-menu-toggle")
+    .addEventListener("click", function() {
+    document.querySelector(".nav-links").classList.toggle("nav-links-responsive")
+    })
+</script>
+
+</html>
+
+<!-- <body>
+    <header class="container-nav">
+      <nav class="navbar">
+    Contenido de la barra de navegación
+    </header>
+
+    <main>
+    Contenido principal
+    </main>
+
+    <footer>
+    Contenido del pie de página
+    </footer>
+ </body>
+
+
+
+alt-shif-a -->
