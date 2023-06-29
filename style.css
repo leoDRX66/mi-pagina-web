@@ -1,7 +1,11 @@
 /*configuro el estilo de toda la pagina */
 body{
-    background-color: #00a9d4;
-    color: #230b00;
+    background-color: #1c3166;
+    background-image: url(https://artfiles.alphacoders.com/123/thumb-1920-123000.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
 }
 
 
